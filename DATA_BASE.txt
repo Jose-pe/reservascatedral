@@ -1,0 +1,18 @@
+CREATE DATABASE catedral_db;
+CREATE USER 'admincatedral'@'localhost' IDENTIFIED BY 'PassCatedral';
+GRANT ALL PRIVILEGES ON catedral_db.* TO 'admincatedral'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+
+
+
+
+CREATE USER 'admincatedral'@'localhost' IDENTIFIED BY 'PassCatedral';
+CREATE USER 'admincatedral'@'127.0.0.1' IDENTIFIED BY 'PassCatedral';
+
+-- 3. Otorgar todos los privilegios sobre tu base de datos
+GRANT ALL PRIVILEGES ON catedral_db.* TO 'admincatedral'@'localhost';
+GRANT ALL PRIVILEGES ON catedral_db.* TO 'admincatedral'@'127.0.0.1';
+
+-- 4. Aplicar cambios y salir
+FLUSH PRIVILEGES;
