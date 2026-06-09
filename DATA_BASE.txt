@@ -4,7 +4,18 @@ GRANT ALL PRIVILEGES ON catedral_db.* TO 'admincatedral'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 
+CREATE DATABASE olivo_db;
+CREATE USER 'adminolivo'@'localhost' IDENTIFIED BY 'PassOlivo';
+GRANT ALL PRIVILEGES ON olivo_db.* TO 'adminolivo'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 
+
+CREATE DATABASE origen_db;
+CREATE USER 'adminorigen'@'localhost' IDENTIFIED BY 'PassOlivo';
+GRANT ALL PRIVILEGES ON origen_db.* TO 'adminorigen'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
 
 
 CREATE USER 'admincatedral'@'localhost' IDENTIFIED BY 'PassCatedral';

@@ -8,7 +8,7 @@
 
   <!-- Bootstrap -->
   <link rel="icon" type="/image/png" href="/img/favicon.ico">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet"  href="/css/catedral.css">
   <link rel="stylesheet"  href="/css/catedralex.css">
@@ -85,7 +85,7 @@
       <!-- IMAGEN -->
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/main-catedral.png">
+           <img src="/img/main-catedral.webp">
              
         </div>
       </div>
@@ -170,9 +170,9 @@
   <div class="container mt-5">
     
     <div class="row g-3 gallery">
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="500"><img src="img/catedral-galeria1.png"></div>
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="700"><img src="img/catedral-galeria2.png"></div>
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="900"><img src="img/catedral-galeria3.png"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="500"><img src="img/catedral-galeria1.webp"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="700"><img src="img/catedral-galeria2.webp"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="900"><img src="img/catedral-galeria3.webp"></div>
     </div>
   </div>
 </section>
@@ -273,7 +273,7 @@
      
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/catedral-balcon.png">
+           <img src="/img/catedral-balcon.webp">
              
         </div>
       </div>
@@ -310,7 +310,7 @@
 
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/terraza-catedral.png">
+           <img src="/img/terraza-catedral.webp">
              
         </div>
       </div>
@@ -332,7 +332,7 @@
             
         </p>
          <div class="image-wrap pt-1">
-           <img src="/img/catedral-sec-3-1.png">
+           <img src="/img/catedral-sec-3-1.webp">
              
         </div>
       
@@ -341,7 +341,7 @@
       </div>
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/catedral-sec-3.png">
+           <img src="/img/catedral-sec-3.webp">
              
         </div>
       </div>
@@ -352,7 +352,7 @@
      <div class="row justify-content-end">
      <div class="col-12 d-flex flex-column align-self-center" data-aos="fade-right">
        
-           <img src="/img/catedral-sec-4.png">
+           <img src="/img/catedral-sec-4.webp">
      
       </div>
   </div>
@@ -428,7 +428,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="/js/main.js"></script>
+
 <script>
   // Navbar cambia al hacer scroll
   window.addEventListener("scroll", function() {
