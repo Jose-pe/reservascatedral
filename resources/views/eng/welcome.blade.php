@@ -7,6 +7,9 @@
   <title>Catedral Restaurant</title>
   <link rel="icon" type="/image/png" href="/img/favicon.ico">
   <!-- Bootstrap -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet"  href="/css/catedral.css">
@@ -59,9 +62,9 @@
   <a href="#galeria">GALLERY</a>
   <a href="#footer">CONTACT</a>
   <hr>
-   <a href="#">GRP. CAMPANAYOC</a>
-   <a href="#">IL OLIVO</a>
-   <a href="#">ORIGEN</a>
+    <a href="https://www.grupocampanayoc.com/" target="blank">GRP. CAMPANAYOC</a>
+   <a href="https://ilolivorestaurant.com/" target="blank">IL OLIVO</a>
+   <a href="https://www.origenrestaurantypisco.com/" target="blank">ORIGEN</a>
 </div>
 <!-- HERO -->
 <section class="hero d-flex align-items-center text-center">
@@ -84,7 +87,7 @@
       <!-- IMAGEN -->
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/main-catedral.png">
+           <img src="/img/main-catedral.webp">
              
         </div>
       </div>
@@ -107,7 +110,7 @@
 
           <div class="info-row">
             <span>CONTACT</span>
-           <a class="links" target="_blank" href="https://api.whatsapp.com/send?phone=946452405"> +51 946 452 405</a>
+           <a class="links" target="_blank" href="https://api.whatsapp.com/send?phone=51946452405"> +51 946 452 405</a>
           </div>
 
           <div class="info-row">
@@ -160,9 +163,9 @@
   <div class="container mt-5">
     
     <div class="row g-3 gallery">
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="500"><img src="img/catedral-galeria1.png"></div>
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="700"><img src="img/catedral-galeria2.png"></div>
-      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="900"><img src="img/catedral-galeria3.png"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="500"><img src="img/catedral-galeria1.webp"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="700"><img src="img/catedral-galeria2.webp"></div>
+      <div class="col-md-4 hover13" data-aos="fade-up" data-aos-duration="900"><img src="img/catedral-galeria3.webp"></div>
     </div>
   </div>
 </section>
@@ -263,7 +266,7 @@
      
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/catedral-balcon.png">
+           <img src="/img/catedral-balcon.webp">
              
         </div>
       </div>
@@ -296,7 +299,7 @@
 
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/terraza-catedral.png">
+           <img src="/img/terraza-catedral.webp">
              
         </div>
       </div>
@@ -317,7 +320,7 @@
           Our cellar brings together a carefully curated selection of local and international labels, paired with the personalized guidance of our sommelier, who guides every choice to achieve the perfect pairing.
         </p>
          <div class="image-wrap pt-4">
-           <img src="/img/catedral-sec-3-1.png">
+           <img src="/img/catedral-sec-3-1.webp">
              
         </div>
       
@@ -326,7 +329,7 @@
       </div>
          <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/catedral-sec-3.png">
+           <img src="/img/catedral-sec-3.webp">
              
         </div>
       </div>
@@ -337,7 +340,7 @@
      <div class="row justify-content-end">
      <div class="col-12 d-flex flex-column align-self-center" data-aos="fade-right">
        
-           <img src="/img/catedral-sec-4.png">
+           <img src="/img/catedral-sec-4.webp">
      
       </div>
   </div>
@@ -411,23 +414,31 @@
   
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+
 <script>
-  // Navbar cambia al hacer scroll
-  window.addEventListener("scroll", function() {
-    document.querySelector(".navbarra").classList.toggle("scrolled", window.scrollY > 50);
-     
+  // Asegurar que el JS corra cuando el árbol HTML esté listo
+  window.addEventListener("DOMContentLoaded", function() {
+    
+    // Navbar cambia al hacer scroll
+    window.addEventListener("scroll", function() {
+      document.querySelector(".navbarra").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Inicializar AOS controlando que el script externo ya esté en memoria
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        once: true // Evita reprocesar animaciones cada vez que se sube/baja scroll
+      });
+    }
   });
 
-   function toggleMenu() {
+  function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("active");
     document.getElementById("overlay").classList.toggle("active");
   }
-
- 
-   AOS.init();
+  
 </script>
 
 </body>

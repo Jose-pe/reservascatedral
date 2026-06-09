@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Catedral Restaurante</title>
-
-  <!-- Bootstrap -->
   <link rel="icon" type="/image/png" href="/img/favicon.ico">
-  <link href="/css/bootstrap.min.css" rel="stylesheet">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet"  href="/css/catedral.css">
   <link rel="stylesheet"  href="/css/catedralex.css">
@@ -60,9 +61,9 @@
   <a href="#galeria">GALERÍA</a>
   <a href="#footer">CONTACTO</a>
   <hr>
-   <a href="#">GRP. CAMPANAYOC</a>
-   <a href="#">IL OLIVO</a>
-   <a href="#">ORIGEN</a>
+   <a href="https://www.grupocampanayoc.com/" target="blank">GRP. CAMPANAYOC</a>
+   <a href="https://ilolivorestaurant.com/" target="blank">IL OLIVO</a>
+   <a href="https://www.origenrestaurantypisco.com/" target="blank">ORIGEN</a>
 </div>
 <!-- HERO -->
 <section class="hero d-flex align-items-center text-center">
@@ -426,24 +427,30 @@
   
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
 
 <script>
-  // Navbar cambia al hacer scroll
-  window.addEventListener("scroll", function() {
-    document.querySelector(".navbarra").classList.toggle("scrolled", window.scrollY > 50);
-     
+  // Asegurar que el JS corra cuando el árbol HTML esté listo
+  window.addEventListener("DOMContentLoaded", function() {
+    
+    // Navbar cambia al hacer scroll
+    window.addEventListener("scroll", function() {
+      document.querySelector(".navbarra").classList.toggle("scrolled", window.scrollY > 50);
+    });
+
+    // Inicializar AOS controlando que el script externo ya esté en memoria
+    if (typeof AOS !== 'undefined') {
+      AOS.init({
+        once: true // Evita reprocesar animaciones cada vez que se sube/baja scroll
+      });
+    }
   });
 
-   function toggleMenu() {
+  function toggleMenu() {
     document.getElementById("sidebar").classList.toggle("active");
     document.getElementById("overlay").classList.toggle("active");
   }
-
- 
-   AOS.init();
 </script>
-
 </body>
 </html>
