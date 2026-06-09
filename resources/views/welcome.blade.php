@@ -6,6 +6,9 @@
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Catedral Restaurante</title>
   <link rel="icon" type="/image/png" href="/img/favicon.ico">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -86,7 +89,7 @@
       <!-- IMAGEN -->
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/main-catedral.webp">
+           <img src="/img/main-catedral.webp" alt="Catedral Restaurant at Cusco" fetchpriority="high">
              
         </div>
       </div>

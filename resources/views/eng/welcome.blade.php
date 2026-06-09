@@ -7,6 +7,9 @@
   <title>Catedral Restaurant</title>
   <link rel="icon" type="/image/png" href="/img/favicon.ico">
   <!-- Bootstrap -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
@@ -15,8 +18,8 @@
   <link rel="stylesheet"  href="/css/catedral.css">
   <link rel="stylesheet"  href="/css/catedralex.css">
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="print" onload="this.media='all'">
    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     
 </head>
@@ -87,7 +90,7 @@
       <!-- IMAGEN -->
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/main-catedral.webp">
+           <img src="/img/main-catedral.webp" alt="Catedral Restaurante Interior" fetchpriority="high">
              
         </div>
       </div>
