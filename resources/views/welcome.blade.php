@@ -121,7 +121,7 @@
 
           <div class="info-row">
             <span>CONTACTO</span>
-           <a class="links" target="_blank" href="https://api.whatsapp.com/send?phone=946452405"> +51 946 452 405</a>
+           <a class="links" target="_blank" href="https://api.whatsapp.com/send?phone=51946452405"> +51 946 452 405</a>
           </div>
 
           <div class="info-row">

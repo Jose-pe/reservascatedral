@@ -141,9 +141,7 @@
     </div>
 
     <!-- POWERED -->
-    <div class="powered">
-      Powered by <strong>Jose Luis Corazao</strong>
-    </div>
+  
 
   </div>
 <script src="/js/telefono.js"></script>

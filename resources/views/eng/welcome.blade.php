@@ -90,7 +90,7 @@
       <!-- IMAGEN -->
       <div class="col-lg-6" data-aos="fade-right">
         <div class="image-wrap">
-           <img src="/img/main-catedral.webp" alt="Catedral Restaurante Interior" fetchpriority="high">
+           <img src="/img/main-catedral.webp" alt="Catedral Restaurant Cusco" fetchpriority="high">
              
         </div>
       </div>
@@ -343,7 +343,7 @@
      <div class="row justify-content-end">
      <div class="col-12 d-flex flex-column align-self-center" data-aos="fade-right">
        
-           <img src="/img/catedral-sec-4.webp">
+           <img src="/img/catedral-sec-4.webp" width="1800px" height="auto">
      
       </div>
   </div>
