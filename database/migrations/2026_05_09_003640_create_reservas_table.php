@@ -25,7 +25,7 @@ return new class extends Migration
 
             $table->string('reservation_time');
 
-            $table->string('service');
+            $table->string('service');          
 
             $table->boolean('food_restrictions')
                   ->default(false);
@@ -36,9 +36,14 @@ return new class extends Migration
             $table->boolean('kids_under_12')
                   ->default(false);
 
-            $table->integer('kids_count')
+            $table->integer('kids_count')->nullable()
                   ->default(0);
+            
+            $table->string('pay_state')->nullable()
+                  ->default('NO APLICA');
 
+            $table->string('special_time')->nullable()->default('Nada especial');;
+                  
             $table->string('label')->nullable()->default('Reserva web');
 
             $table->string('state')->default('Pendiente');

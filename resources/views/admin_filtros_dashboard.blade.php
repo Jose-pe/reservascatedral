@@ -16,6 +16,12 @@
     .card { border-radius: 15px; }
     .section { display:none; }
     .section.active { display:block; }
+     td{
+      text-align: center !important;
+    }
+     th{
+      text-align: center !important;
+    }
   </style>
 </head>
 <body>
@@ -135,6 +141,8 @@
                 <th>Servicio</th>
                 <th>Restricciones</th>
                 <th>Niños</th>
+                <th>Ocación</th>
+                <th>Estado de Pago</th>
                 <th>Etiqueta</th>
                 <th>Estado</th>                
                 <th>Acciones</th>
@@ -153,6 +161,16 @@
                 <td>{{$reserva->service}}</td>
                 <td>{{$reserva->food_description}}</td>
                 <td class="text-center" >{{$reserva->kids_count}}</td>
+                <td class="text-center" >{{$reserva->special_time}}</td>
+                 @if ($reserva->pay_state === 'IMPAGO')
+                <td class="text-center" ><a class="badge bg-danger text-white  p-2">{{$reserva->pay_state}}</a></td>
+                @endif
+                @if ($reserva->pay_state === 'PAGO')
+                <td class="text-center" ><a class="badge  bg-success p-2">{{$reserva->pay_state}}</a></td>
+                @endif
+                 @if ($reserva->pay_state === 'NO APLICA')
+                <td class="text-center" ><a class="badge text-dark bg-warning p-2">{{$reserva->pay_state}}</a></td>
+                @endif
                 <td> {{$reserva->label}}</td>
                 @if ($reserva->state === 'Pendiente')
                 <td ><a class="badge bg-warning  text-dark  p-2">{{$reserva->state}}</a></td>
