@@ -488,8 +488,8 @@
           @method('post')
         <input type="hidden" id="editIndex">
         <div class="mb-2"><input class="form-control" id="name" name="name" placeholder="Cliente" required></div>
-        <div class="mb-2"><input class="form-control" id="email" name="email" placeholder="E-mail" required></div>
-        <div class="mb-2"><input class="form-control" id="phone" name="phone" placeholder="Telefono" required></div>
+        <div class="mb-2"><input class="form-control" id="email" name="email" placeholder="E-mail"></div>
+        <div class="mb-2"><input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefono" required></div>
         <div class="mb-2"><input type="number" min="1" max="100" class="form-control" id="guests" name="guests" placeholder="Personas" required></div>
         <div class="mb-2"><input type="date" class="form-control" id="reservation_date" name="reservation_date" required></div>
         <div class="mb-2"><input type="time" min="11:00" max="22:30" class="form-control" id="reservation_time" name="reservation_time" required></div>
@@ -499,8 +499,8 @@
                           <option value="Cena">Cena</option>                          
                           </select>
         </div>
-        <div class="mb-2"><input  class="form-control" id="food_description" name="food_description" placeholder="Restricciones alimentarias" required></div>
-        <div class="mb-2"><input type="number" min="0" max="100" class="form-control" id="kids_count" name="kids_count" placeholder="Niños menores de 12 años" required></div>
+        <div class="mb-2"><input  class="form-control" value="no tiene" id="food_description" name="food_description" placeholder="Restricciones alimentarias"></div>
+        <div class="mb-2"><input type="number" min="0" max="100" value="0" class="form-control" id="kids_count" name="kids_count" placeholder="Niños menores de 12 años"></div>
         
         <div class="mb-2"><select class="form-select"  id="label" name="label" required>
                             <option value="" selected disabled>Seleccione la etiqueta</option>
@@ -508,7 +508,9 @@
                             <option value="Grupo de agencias">Grupo de agencias</option>
                             <option value="Grupo de guias">Grupo de guias</option>
                             <option value="Invitación">Invitación</option>        
-                            <option value="Servicio Regular">Servicio Regular</option>                
+                            <option value="Servicio Regular">Servicio Regular</option> 
+                            <option value="Menú Catedral">Menú Catedral</option>
+                            <option value="Menú Premium">Menú Premium</option>               
                             </select>
           </div>
           <div class="mb-2"><select class="form-select"  id="state" name="state" required>
