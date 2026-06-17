@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://catedralrestaurant.com/</loc>
+  <lastmod>2026-06-17T21:14:07+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/eng</loc>
+  <lastmod>2026-06-17T21:14:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/reservas_comensales</loc>
+  <lastmod>2026-06-17T21:14:07+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/carta_catedral.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/carta_catedral_postres.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/carta_catedral_vinos.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/carta_bar_catedral.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/portafolio_catedral.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://catedralrestaurant.com/carta/carta_catedral_eng.pdf</loc>
+  <lastmod>2026-06-06T07:41:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
