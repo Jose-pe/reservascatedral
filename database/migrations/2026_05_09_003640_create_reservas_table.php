@@ -42,7 +42,7 @@ return new class extends Migration
             $table->string('pay_state')->nullable()
                   ->default('NO APLICA');
 
-            $table->string('special_time')->nullable()->default('Nada especial');;
+            $table->string('special_time')->nullable()->default('Nada especial');
                   
             $table->string('label')->nullable()->default('Reserva web');
 
