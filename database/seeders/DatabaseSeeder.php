@@ -18,12 +18,12 @@ class DatabaseSeeder extends Seeder
     {
         
 
-        User::create([
+       /* User::create([
             'name' => 'Admin_Reservas',
             'email' => 'admin@catedral.com',
             'role' => 'admin',
             'password' => Hash::make('pass-catedral-01'),
-        ]);
+        ]);*/
 
           User::create([
             'name' => 'Reservas_General',
