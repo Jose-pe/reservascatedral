@@ -104,13 +104,11 @@
                 <th>Servicio</th>
                 <th>Restricciones</th>
                 <th>Niños</th>
-                <th>Ocasión</th>
+                <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado de Reserva</th>  
-                <th>Observaciones</th>              
+                <th>Estado de Reserva</th>                
                 <th>Acciones</th>
-
               </tr>
             </thead>
             <tbody>
@@ -148,7 +146,7 @@
                 <td ><a class="badge bg-danger p-2">{{$reserva->state}}</a></td>
                 @endif
                
-                <td>{{$reserva->observation}}</td>
+                
                 <td>  
                   <form action="{{ route('admin_atendido_state', ['id' => $reserva->id]) }}" method="post" style="display:inline-block;">
                     @csrf
@@ -198,8 +196,7 @@
                 <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado de Reserva</th>  
-                <th>Observaciones</th>              
+                <th>Estado de Reserva</th>                
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -236,8 +233,6 @@
                 @if ($reserva_siguiente->state === 'Cancelado')
                 <td ><a class="badge bg-danger p-2">{{$reserva_siguiente->state}}</a></td>
                 @endif  
-
-                <td>{{$reserva_siguiente->observation}}</td>
                   <td>           
                  
                     <form action="{{ route('admin_edit_reserva', ['id' => $reserva_siguiente->id]) }}" method="get" style="display:inline-block;">     
@@ -278,11 +273,10 @@
                 <th>Servicio</th>
                 <th>Restricciones</th>
                 <th>Niños</th>
-                <th>Ocasión</th>
+                <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado de Reserva</th>  
-                <th>Observaciones</th>              
+                <th>Estado de Reserva</th>                
                
               </tr>
             </thead>
@@ -323,8 +317,6 @@
                 @if ($reserva_state->state === 'Atendido')
                 <td ><a class="badge bg-primary p-2">{{$reserva_state->state}}</a></td>
                 @endif 
-
-                <td>{{$reserva_state->observation}}</td>
                  {{-- <td >  
                    <form action="{{ route('admin_edit_reserva', ['id' => $reserva_state->id]) }}" method="get" style="display:inline-block;">     
                     @csrf
@@ -365,11 +357,10 @@
                 <th>Servicio</th>
                 <th>Restricciones</th>
                 <th>Niños</th>
-                <th>Ocasión</th>
+                <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado de Reserva</th>   
-                <th>Observaciones</th>             
+                <th>Estado de Reserva</th>                
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -421,7 +412,6 @@
                 @if ($reserva_pendiente->state === 'Cancelado')
                 <td ><a class="badge bg-danger p-2">{{$reserva_pendiente->state}}</a></td>
                 @endif
-                <td>{{$reserva_pendiente->observation}}</td>
                  <td>                   
                     <button type="submit" class="btn btn-sm btn-success"><i class="bi bi-check-square"></i></button>
                   </form>            
@@ -472,8 +462,7 @@
                 <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado de Reserva</th> 
-                <th>Observaciones</th>               
+                <th>Estado de Reserva</th>                
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -516,7 +505,7 @@
                 @if ($reserva_hoy->state === 'Atendido')
                 <td ><a class="badge bg-primary p-2">{{$reserva_hoy->state}}</a></td>
                 @endif  
-                  <td>{{$reserva_hoy->observation}}</td>
+
                  <td>
                   <form action="{{ route('admin_edit_reserva', ['id' => $reserva_hoy->id]) }}" method="get" style="display:inline-block;">     
                     @csrf
@@ -587,8 +576,8 @@
         </div>
         <div class="mb-2"><input  class="form-control" id="food_description" name="food_description" placeholder="Restricciones alimentarias"></div>
         <div class="mb-2"><input type="number" min="0" max="100" class="form-control" id="kids_count" name="kids_count" placeholder="Niños menores de 12 años"></div>
-        <div class="mb-2"><input class="form-control" type="text" id="special_time" name="special_time" placeholder="Ocación especial ?"></div>
-        <div class="mb-2"><input class="form-control" type="text-area"  id="observations" name="observations" placeholder="Ocación especial ?"></div>
+         <div class="mb-2"><input class="form-control" type="text" id="special_time" name="special_time" placeholder="Ocación especial ?"></div>
+
         <div class="mb-2"><select class="form-select"  id="label" name="label" required>
                             <option value="" selected disabled>Seleccione la etiqueta</option>
                             <option value="FITS">FITS</option>
@@ -596,7 +585,8 @@
                             <option value="Grupo de guias">Grupo de guias</option>
                             <option value="Invitación">Invitación</option>        
                             <option value="Servicio Regular">Servicio Regular</option> 
-                            <option value="Menú Turístico">Menú Turístico</option>                                    
+                            <option value="Menú Catedral">Menú Catedral</option>
+                            <option value="Menú Premium">Menú Premium</option>               
                             </select>
           </div>
             <div class="mb-2"><select class="form-select"  id="pay_state" name="pay_state">
@@ -612,9 +602,6 @@
                             <option value="Confirmado">Confirmado</option>                        
                             </select>
           </div>
-          <lAbel class="ps-2">Observaciones</lAbel>
-          <div class="mb-2"><textarea class="form-control" type="text" id="observation" name="observation" rows="2" placeholder="La reserva tiene observaciones ?">  </textarea> </div>
-
       <div class="modal-footer">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         <button class="btn btn-dark" type="submit">Guardar</button>

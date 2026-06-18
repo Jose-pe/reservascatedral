@@ -22,7 +22,10 @@ class Reserva extends Model
         'special_time',
         'label',
         'pay_state',
-        'state'
+        'state',
+        'observation',
+        'id_admin'
+
 
     ];
 }

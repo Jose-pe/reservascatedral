@@ -158,7 +158,8 @@
                                     <option value="Grupo de guias">Grupo de guias</option>
                                     <option value="Invitación">Invitación</option>        
                                     <option value="Servicio Regular">Servicio Regular</option>     
-                                   <option value="Menú Turístico">Menú Turístico</option>    
+                                    <option value="Menú Catedral">Menú Catedral</option>
+                                    <option value="Menú Premium">Menú Premium</option>    
                             </select>
                             @error('label') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
@@ -176,13 +177,6 @@
                                
                             </select>
                             @error('state') <div class="invalid-feedback">{{ $message }}</div> @enderror
-                        </div>
-
-                         {{-- Obsercaciones --}}
-                        <div class="mb-3">
-                            <label for="observation" class="form-label text-muted fw-semibold mb-1">Observaciones</label>
-                            <textarea type="text"  class="form-control form-control-modern @error('observation') is-invalid @enderror" id="observation" name="observation" value="{{ old('observation', $reserva->observation) }}"> {{$reserva->observation}} </textarea>
-                            @error('observation') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
 
                         {{-- Botones de acción --}}

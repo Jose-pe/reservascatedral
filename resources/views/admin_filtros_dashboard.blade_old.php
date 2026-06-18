@@ -144,8 +144,7 @@
                 <th>Ocación</th>
                 <th>Estado de Pago</th>
                 <th>Etiqueta</th>
-                <th>Estado</th>   
-                <th>Observasiones</th>             
+                <th>Estado</th>                
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -186,7 +185,6 @@
                 <td ><a class="badge bg-primary p-2">{{$reserva->state}}</a></td>
                 @endif
                
-                    <td>{{$reserva->observation}}</td>
                 
                 <td>  
                     <form action="{{ route('admin_edit_reserva', ['id' => $reserva->id]) }}" method="GET" style="display:inline-block;">
