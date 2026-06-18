@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('reservas', function (Blueprint $table) {
-             $table->string('observation')->nullable()->default('Ninguna');
+             $table->string('observation')->nullable()->default('No hay observaciones');
         });
     }
 
