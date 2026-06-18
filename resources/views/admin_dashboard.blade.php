@@ -596,7 +596,8 @@
                             <option value="Grupo de guias">Grupo de guias</option>
                             <option value="Invitación">Invitación</option>        
                             <option value="Servicio Regular">Servicio Regular</option> 
-                            <option value="Menú Turístico">Menú Turístico</option>                                    
+                            <option value="Menú Catedral">Menú Catedral</option>
+                            <option value="Menú Premium">Menú Premium</option>                                        
                             </select>
           </div>
             <div class="mb-2"><select class="form-select"  id="pay_state" name="pay_state">

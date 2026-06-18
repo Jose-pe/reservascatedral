@@ -17,6 +17,12 @@
     .card { border-radius: 15px; }
     .section { display:none; }
     .section.active { display:block; }
+    td{
+      text-align: center !important;
+    }
+     th{
+      text-align: center !important;
+    }
   </style>
 </head>
 <body>
@@ -158,7 +164,8 @@
                                     <option value="Grupo de guias">Grupo de guias</option>
                                     <option value="Invitación">Invitación</option>        
                                     <option value="Servicio Regular">Servicio Regular</option>     
-                                   <option value="Menú Turístico">Menú Turístico</option>    
+                                    <option value="Menú Catedral">Menú Catedral</option>
+                                    <option value="Menú Premium">Menú Premium</option>        
                             </select>
                             @error('label') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
