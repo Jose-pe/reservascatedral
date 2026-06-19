@@ -188,7 +188,7 @@
                          {{-- Obsercaciones --}}
                         <div class="mb-3">
                             <label for="observation" class="form-label text-muted fw-semibold mb-1">Observaciones</label>
-                            <textarea type="text"  class="form-control form-control-modern @error('observation') is-invalid @enderror" id="observation" name="observation" value="{{ old('observation', $reserva->observation) }}"> {{$reserva->observation}} </textarea>
+                            <textarea type="text"  class="form-control form-control-modern @error('observation') is-invalid @enderror" id="observation" name="observation" value="{{ old('observation', $reserva->observation) }}">{{$reserva->observation}}</textarea>
                             @error('observation') <div class="invalid-feedback">{{ $message }}</div> @enderror
                         </div>
 

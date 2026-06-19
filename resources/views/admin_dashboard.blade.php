@@ -588,7 +588,6 @@
         <div class="mb-2"><input  class="form-control" id="food_description" name="food_description" placeholder="Restricciones alimentarias"></div>
         <div class="mb-2"><input type="number" min="0" max="100" class="form-control" id="kids_count" name="kids_count" placeholder="Niños menores de 12 años"></div>
         <div class="mb-2"><input class="form-control" type="text" id="special_time" name="special_time" placeholder="Ocación especial ?"></div>
-        <div class="mb-2"><input class="form-control" type="text-area"  id="observations" name="observations" placeholder="Ocación especial ?"></div>
         <div class="mb-2"><select class="form-select"  id="label" name="label" required>
                             <option value="" selected disabled>Seleccione la etiqueta</option>
                             <option value="FITS">FITS</option>
@@ -614,7 +613,7 @@
                             </select>
           </div>
           <lAbel class="ps-2">Observaciones</lAbel>
-          <div class="mb-2"><textarea class="form-control" type="text" id="observation" name="observation" rows="2" placeholder="La reserva tiene observaciones ?">  </textarea> </div>
+          <div class="mb-2"><textarea class="form-control" type="text" id="observation" name="observation" rows="2" placeholder="La reserva tiene observaciones ?"></textarea> </div>
 
       <div class="modal-footer">
         <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
