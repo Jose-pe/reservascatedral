@@ -83,8 +83,30 @@
       <!-- Table Reservas -->
       <div class="card shadow pt-5">
         <div class="card-header d-flex justify-content-between align-items-center">
-         
-      
+           <div class="col-4 text-start m-3">
+            
+            <form action="{{route('super_admin_filtrar_email')}}" method="get">
+                 @csrf
+                @method('GET')
+            <div class="input-group mb-3">
+            <span class="input-group-text fw-bolder">Filtrar por e-mail</span>
+            <input type="email" class="form-control fw-bolder" id="email" name="email" required>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+            </div>
+            </form>
+        </div>
+        <div class="col-4 text-start m-3">
+           <form action="{{route('super_admin_filtrar_fecha')}}" method="get">
+             @csrf
+             @method('GET')
+            <div class="input-group mb-3">
+            <span class="input-group-text fw-bolder">Filtrar por fecha</span>
+            <input type="date" class="form-control fw-bolder" id="reservation_date" name="reservation_date" required>
+            <button class="btn btn-primary" type="submit">Buscar</button>
+            </div>
+            </form>
+
+        </div>
         <div class="col-4 d-flex justify-content-start m-3">
          <form action="{{route('admin_filtrar_by_admin')}}" method="get">
                 @csrf

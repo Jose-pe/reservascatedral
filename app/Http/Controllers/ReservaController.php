@@ -325,6 +325,27 @@ class ReservaController extends Controller
          return view('super_admin_table_reservas', compact('reservas'));
     }
 
+        public function super_admin_filtrar_fecha(Request $request){
+
+        if (Auth::user()->role !== 'admin') {
+                return view('welcome');
+            }
+        $fecha = $request->input('reservation_date');
+        $reservas = Reserva::all()->where('reservation_date', '=' , $fecha); 
+        return view('super_admin_table_reservas', compact('reservas'));
+    }
+
+     public function super_admin_filtrar_email(Request $request){
+
+        if (Auth::user()->role !== 'admin') {
+                return view('welcome');
+            }
+        $email = $request->input('email');
+        $reservas = Reserva::all()->where('email', '=' , $email); 
+        return view('super_admin_table_reservas', compact('reservas'));
+    }
+
+
      /* EXPORTAR ECEL DEL DIA DE MAÑANA*/
     public function reporte_reservas_tomorrow()
     {
