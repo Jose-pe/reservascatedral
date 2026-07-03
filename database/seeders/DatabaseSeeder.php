@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@catedral.com',
             'role' => 'admin',
             'password' => Hash::make('pass-catedral-01'),
-        ]);*/
+        ]);
 
           User::create([
             'name' => 'Reservas_General',
@@ -37,6 +37,13 @@ class DatabaseSeeder extends Seeder
             'email' => 'comercial@campanayoc.com',
             'role' => 'admin',
             'password' => Hash::make('comercial-campanayoc-079'),
+        ]);*/
+
+          User::create([
+            'name' => 'Soporte Tecnico',
+            'email' => 'soporte@campanayoc.com',
+            'role' => 'admin',
+            'password' => Hash::make('soporte-campanayoc-666999'),
         ]);
 
 
