@@ -53,7 +53,7 @@
 
      <a href="{{ route('reservas_reporte_hoy') }}" class="btn btn-success d-inline-flex align-items-center gap-2">
          <i class="fas fa-file-excel"></i> 
-        Descargar Reservas para mañana
+        Descargar Reservas para hoy
     </a>
 </div>
       <div class="row">
