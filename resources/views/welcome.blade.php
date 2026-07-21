@@ -1,9 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YFT0715HMP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YFT0715HMP');
+</script>
+  
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <meta name="csrf-token" content="{{ csrf_token() }}">   
+
   <title>Catedral Restaurant</title>
   <link rel="icon" type="/image/png" href="img/favicon.ico">
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
