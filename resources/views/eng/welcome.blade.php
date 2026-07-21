@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>Catedral Restaurant</title>
-  <link rel="icon" type="/image/png" href="/img/favicon.ico">
+  <link rel="icon" type="/image/png" href="favicon.ico">
   <!-- Bootstrap -->
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://unpkg.com">

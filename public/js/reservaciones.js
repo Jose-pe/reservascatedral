@@ -151,15 +151,6 @@ document
 
     // actualizar pill  
 
-const peopleSelected =
-  document.getElementById('peopleSelected');
-    peopleSelected.innerText = guests;
-
-    // ocultar pantalla invitados
-    guestScreen.classList.add('d-none');
-
-    // mostrar pantalla fechas
-    dateScreen.classList.remove('d-none');
 
   });
 
