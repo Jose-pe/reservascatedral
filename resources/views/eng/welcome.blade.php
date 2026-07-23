@@ -153,8 +153,8 @@
       </div>
       <div class="modal-body">
         <a  target="_blank" href="/carta/carta_catedral_eng.pdf" class="menu-link "> <i class="fas fa-utensils"></i> VIEW MENU</a>  <br><br>
-        <a  target="_blank" href="/carta/carta_catedral_postres.pdf" class="menu-link "> <i class="bi bi-cake2-fill"></i> VIEW DESSERT MENU</a><br><br>
-        <a  target="_blank" href="/carta/carta_catedral_vinos.pdf" class="menu-link ">  <i class="fas fa-wine-glass-empty"></i> VIEW WINE LIST</a><br><br>
+        <a  target="_blank" href="/carta/carta_catedral_postres.pdf" class="menu-link "> <i class="bi bi-cake2-fill"></i> VIEW DESSERTS MENU</a><br><br>
+        <a  target="_blank" href="/carta/carta_catedral_vinos.pdf" class="menu-link ">  <i class="fas fa-wine-glass-empty"></i> VIEW WINES LIST</a><br><br>
         <a  target="_blank" href="/carta/carta_bar_catedral.pdf" class="menu-link "> <i class="fas fa-wine-bottle"></i> VIEW BAR MENU</a><br><br>
       </div>
       <div class="modal-footer">
