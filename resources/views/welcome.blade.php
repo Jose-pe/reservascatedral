@@ -75,7 +75,7 @@
   <a href="#galeria">GALERÍA</a>
   <a href="#footer">CONTACTO</a>
   <hr>
-   <a href="https://www.grupocampanayoc.com/" target="blank">GRP. CAMPANAYOC</a>
+ 
    <a href="https://ilolivorestaurant.com/" target="blank">IL OLIVO</a>
    <a href="https://www.origenrestaurantypisco.com/" target="blank">ORIGEN</a>
 </div>
