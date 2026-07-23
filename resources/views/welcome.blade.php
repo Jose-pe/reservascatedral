@@ -154,7 +154,7 @@
         </button>
 
 <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<dliv class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog" >
     <div class="modal-content" id="background_experiencias">
       <div class="modal-header">
@@ -192,7 +192,7 @@
   </div>
 </section>
 
-<section class="container  px-0 mt-5">
+{{--<section class="container  px-0 mt-5">
 <p class="text-center">
   <button class="btn-moderno mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
   E X P E R I E N C I A S
@@ -276,7 +276,7 @@
 </div>
   </div>
 </div>
-</section>
+</section>--}}
 
 
 

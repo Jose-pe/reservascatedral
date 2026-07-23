@@ -182,7 +182,7 @@
   </div>
 </section>
 
-<section class="container  px-0 mt-5">
+{{--<section class="container  px-0 mt-5">
 <p class="text-center">
   <button class="btn-moderno mb-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
    E x p e r i e n c e s
@@ -266,7 +266,7 @@
 </div>
   </div>
 </div>
-</section>
+</section>--}}
 
 
 
