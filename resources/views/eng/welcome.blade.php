@@ -348,11 +348,11 @@
 
     </div>
   </div>
-  <div class="container mt-5">
+ <div class="container mt-5">
      <div class="row justify-content-end">
      <div class="col-12 d-flex flex-column align-self-center" data-aos="fade-right">
        
-           <img src="/img/catedral-sec-4.webp" width="1800px" height="auto">
+           <img src="/img/catedral-sec-4.webp">
      
       </div>
   </div>
@@ -361,15 +361,15 @@
    <div class="container mt-5">
      <div class="row justify-content-end">
      <div class="col-12 d-flex flex-column align-self-center" data-aos="fade-right">
-        <p class="out-text"> At Catedral Cusco, architecture, history, and design seamlessly blend to create a unique experience in the heart of Cusco. 
+        <p class="out-text"> At Catedral Cusco, architecture, history, and design seamlessly blend to create a unique experience in the heart of Cusco. </p>
         <p class="out-text"> Every detail has been carefully thought out to highlight the essence of the city, combining elegance, identity, and a sophisticated atmosphere that invites you to enjoy every moment in a truly memorable setting.</p>
-</p>
+
           
       </div>
   </div>
 
   </div>
-</section>
+
 </section>
 
 
