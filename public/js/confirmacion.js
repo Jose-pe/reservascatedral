@@ -129,7 +129,10 @@
     document
       .getElementById('reserveBtn')
       .addEventListener('click', ()=>{
-
+        reserveBtn.innerHTML = `
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Cargando...
+      `;
         const reservationData = {
           user,
           guests,

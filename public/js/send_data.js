@@ -11,12 +11,22 @@ document
   .getElementById('reserveBtn')
   .addEventListener('click', async ()=>{
 
+      let guests = localStorage.getItem('campoGuests');
+     
+      if (guests === 0 ||  guests === null) {
+
+         
+            reserveBtn.disabled = false;
+            window.location.href = "/reservas_error_comensales";
+        }
     // =========================
     // OBTENER DATOS
     // =========================
-
-    const guests =
-      localStorage.getItem('campoGuests');
+    reserveBtn.innerHTML = `
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Cargando...
+      `;
+   
 
      let phone;
 

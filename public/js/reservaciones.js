@@ -212,7 +212,8 @@ document
             Para grupos grandes contactar por WhatsApp
         `;
 
-        continueGuests.style.background = "#25D366";
+        continueGuests.style.background = "#05742e";
+        
 
         // LINK WHATSAPP
         continueGuests.onclick = () => {
@@ -238,6 +239,10 @@ document
 
     continueGuests.onclick = () => {
       
+     continueGuests.innerHTML = `
+        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        Cargando...
+      `;
 
     window.location.href = "/reservas_cliente";
        

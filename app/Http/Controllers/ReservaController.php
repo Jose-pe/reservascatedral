@@ -91,6 +91,11 @@ class ReservaController extends Controller
          $input['email'] = Auth::user()->email;
          $input['id_admin'] = 'Usuario Web'; 
          $input['role'] = 'cliente';   
+
+        if (empty($input['guests'])) {
+        return redirect()->route('reservas_error_comensales');
+        }
+
          
         $existe = Reserva::where([
         'email' => $input['email'],
@@ -116,7 +121,10 @@ class ReservaController extends Controller
 
        
     }
-
+    public function reservas_error_comensales()
+    {
+        return view('reservas_error_comensales');
+    }
      public function reservas_error()
     {
         return view('reservas_error');
