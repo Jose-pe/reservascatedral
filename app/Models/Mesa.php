@@ -6,12 +6,22 @@ use Illuminate\Database\Eloquent\Model;
 
 class Mesa extends Model
 {
-    protected $fillable = [
+     protected $fillable = [
 
         'number',
-        'sites',
-        'state'
-
+        'capacity',
+        'shape',
+        'zone',
+        'status',
+        'x',
+        'y',       
     ];
+
+      
+
+         public function DetalleReservas()
+    {
+        return $this->hasMany(DetalleReservas::class, 'id_mesa', 'id');
+    }
 
 }

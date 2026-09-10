@@ -24,8 +24,13 @@ class Reserva extends Model
         'pay_state',
         'state',
         'observation',
-        'id_admin'
+        'id_admin',
+        'state_asignation'   
 
 
     ];
+
+     public function mesas(){
+      return $mesa->belongsToMany(Mesa::class);
+     }  
 }
