@@ -37,15 +37,21 @@ class DatabaseSeeder extends Seeder
             'email' => 'comercial@campanayoc.com',
             'role' => 'admin',
             'password' => Hash::make('comercial-campanayoc-079'),
-        ]);*/
+        ]);
 
           User::create([
             'name' => 'Soporte Tecnico',
             'email' => 'soporte@campanayoc.com',
             'role' => 'admin',
             'password' => Hash::make('soporte-campanayoc-666999'),
-        ]);
+        ]);*/
 
+       User::create([
+            'name' => 'Marketing_General',
+            'email' => 'marketing@campanayoc.com',
+            'role' => 'admin',
+            'password' => Hash::make('marketing-campanayoc-081'),
+        ]);
 
     }
 }
