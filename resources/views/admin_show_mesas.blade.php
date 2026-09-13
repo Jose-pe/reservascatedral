@@ -139,7 +139,7 @@
                             </h4>
         </div>
         
-        <div class="m-1 overflow-auto" id="container-reservas">
+        <div class="m-1" id="container-reservas">
             
         </div>
 
@@ -172,7 +172,7 @@
                 </div>
                
                 <div class="text-secondary"> <input type="date" class="form-control" id="reservation_date_control" name="reservation_date_control"></div>
-                <div class="text-secondary"> <input type="time" class="form-control" id="reservation_time_control" name="reservation_time_control" value="11:00"></div>
+                <div class="text-secondary"> <input type="time" class="form-control" id="reservation_time_control" name="reservation_time_control" min="11:00" max="22:30" value="11:00"></div>
                 <div class="text-secondary"> <input type="time" disabled class="form-control" id="reservation_time_end_control" name="reservation_time_end_control" value="13:00"></div>
  
                 
