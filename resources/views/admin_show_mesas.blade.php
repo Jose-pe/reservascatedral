@@ -112,7 +112,7 @@
         }
     </style>
 </head>
-<body class="overflow-hidden vh-100 d-flex">
+<body class="vh-100 d-flex">
 
     <!-- BARRA LATERAL DE NAVEGACIÓN PRINCIPAL -->
     <aside class="bg-dark-sidebar border-end border-dark-custom d-flex flex-column justify-content-start flex-shrink-0" style="width: 300px;">
@@ -454,7 +454,7 @@
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/js-mesas/mesas.js"></script>
-    
+   
     
 </body>
 </html>
