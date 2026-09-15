@@ -21,6 +21,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #0b0f19;
             color: #f1f5f9;
+           
         }
 
         /* Colores personalizados compatibles con la paleta original */
@@ -110,10 +111,11 @@
             border-color: #f59e0b !important;
             transform: scale(1.05);
         }
-         /* Se aplica desde 1520px hacia abajo */
-       @media screen and (max-width: 1525px) {
+       
+       @media(max-width: 1625px) {
         body {
             zoom: 80% !important;
+            height: 125vh  !important;
         }
         }
     </style>
@@ -460,6 +462,7 @@
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/js/js-mesas/mesas.js"></script>
+   
    
     
 </body>
