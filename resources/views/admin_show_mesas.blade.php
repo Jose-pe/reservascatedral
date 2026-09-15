@@ -21,7 +21,7 @@
             font-family: 'Plus Jakarta Sans', sans-serif;
             background-color: #0b0f19;
             color: #f1f5f9;
-           
+            
         }
 
         /* Colores personalizados compatibles con la paleta original */
@@ -114,7 +114,7 @@
        
        @media(max-width: 1625px) {
         body {
-            zoom: 80%;
+            zoom: 80% !important;
             height: 125%;
         }
         }
