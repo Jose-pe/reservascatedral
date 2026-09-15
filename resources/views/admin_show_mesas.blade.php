@@ -114,8 +114,8 @@
        
        @media(max-width: 1625px) {
         body {
-            zoom: 80% !important;
-            height: 125vh  !important;
+            zoom: 80%;
+            height: 125%;
         }
         }
     </style>
