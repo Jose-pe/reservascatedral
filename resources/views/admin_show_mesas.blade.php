@@ -115,7 +115,7 @@
        @media(max-width: 1625px) {
         body {
             zoom: 80% !important;
-            height: 125%;
+            
         }
         }
     </style>
@@ -200,7 +200,7 @@
                 </button>
 
                 <button onclick="setZone('cava')" id="zone-cava" class="btn btn-sm text-secondary fw-semibold rounded-2 px-3">
-                    <i class="fa-solid fa-vihara me-2" style="color: rgb(255, 255, 255);"></i>Cava
+                    <i class="fa-solid fa-wine-bottle me-2" style="color: rgb(255, 255, 255);"></i>Cava
                 </button>
             </div>
 

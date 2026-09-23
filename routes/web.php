@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ReservaController;
+use App\Http\Controllers\ReclamoAdminController;
+use App\Http\Controllers\MesaController;
+use App\Http\Controllers\ReclamoController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -47,6 +50,11 @@ Route::put('/admin_update_reserva/{id}', [App\Http\Controllers\ReservaController
 Route::get('/admin_filtrar_email', [App\Http\Controllers\ReservaController::class, 'admin_filtrar_email'])->middleware('auth','admin')->name('admin_filtrar_email');
 Route::get('/admin_filtrar_fecha', [App\Http\Controllers\ReservaController::class, 'admin_filtrar_fecha'])->middleware('auth','admin')->name('admin_filtrar_fecha');
 Route::get('/admin_filtrar_etiqueta', [App\Http\Controllers\ReservaController::class, 'admin_filtrar_etiqueta'])->middleware('auth','admin')->name('admin_filtrar_etiqueta');
+Route::get('/admin_reclamos_index', [ReclamoAdminController::class, 'index'])->middleware('auth','admin')->middleware('auth','admin')->name('admin_reclamos_index');
+Route::get('/admin_reclamos_exportar', [ReclamoAdminController::class, 'exportCsv'])->middleware('auth','admin')->name('admin_reclamos_export');
+Route::get('/admin_reclamos/{reclamo}', [ReclamoAdminController::class, 'show'])->middleware('auth','admin')->name('admin_reclamos_show');
+Route::put('/admin_reclamos/{reclamo}/responder', [ReclamoAdminController::class, 'responder'])->middleware('auth','admin')->name('admin_reclamos_responder');
+
 
 Route::get('/reservas_reporte', [App\Http\Controllers\ReservaController::class, 'reporte_reservas_tomorrow'])->middleware('auth','admin')->name('reservas_reporte');
 Route::get('/reservas_reporte_hoy', [App\Http\Controllers\ReservaController::class, 'reporte_reservas_today'])->middleware('auth','admin')->name('reservas_reporte_hoy');
@@ -55,6 +63,10 @@ Route::get('/show_superadmin_reservas', [App\Http\Controllers\ReservaController:
 Route::get('/admin_filtrar_by_admin', [App\Http\Controllers\ReservaController::class, 'admin_filtrar_by_admin'])->middleware('auth','admin')->name('admin_filtrar_by_admin');
 Route::get('/super_admin_filtrar_fecha', [App\Http\Controllers\ReservaController::class, 'super_admin_filtrar_fecha'])->middleware('auth','admin')->name('super_admin_filtrar_fecha');
 Route::get('/super_admin_filtrar_email', [App\Http\Controllers\ReservaController::class, 'super_admin_filtrar_email'])->middleware('auth','admin')->name('super_admin_filtrar_email');
+
+//LIBRO DE RECLAMACIONES
+Route::get('/libro-de-reclamaciones', [ReclamoController::class, 'create'])->name('libro-reclamaciones.create');
+Route::post('/libro-de-reclamaciones', [ReclamoController::class, 'store'])->name('libro-reclamaciones.store');
 
 //GESTION DE MESAS Y HORAS
 Route::get('/gestion_mesas_query', [App\Http\Controllers\MesaController::class, 'index'])->middleware('auth','admin')->name('gestion_mesas_query');
