@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\GoogleController;
 use App\Http\Controllers\ReservaController;
 use App\Http\Controllers\ReclamoAdminController;
 use App\Http\Controllers\MesaController;
+use App\Http\Controllers\EstadisticaController;
 use App\Http\Controllers\ReclamoController;
 use App\Http\Middleware\AdminMiddleware;
 use Illuminate\Support\Facades\Auth;
@@ -54,7 +55,7 @@ Route::get('/admin_reclamos_index', [ReclamoAdminController::class, 'index'])->m
 Route::get('/admin_reclamos_exportar', [ReclamoAdminController::class, 'exportCsv'])->middleware('auth','admin')->name('admin_reclamos_export');
 Route::get('/admin_reclamos/{reclamo}', [ReclamoAdminController::class, 'show'])->middleware('auth','admin')->name('admin_reclamos_show');
 Route::put('/admin_reclamos/{reclamo}/responder', [ReclamoAdminController::class, 'responder'])->middleware('auth','admin')->name('admin_reclamos_responder');
-
+Route::get('/admin_estadisticas_reservas', [EstadisticaController::class, 'reservas'])->middleware('auth','admin')->name('admin_estadisticas_reservas');
 
 Route::get('/reservas_reporte', [App\Http\Controllers\ReservaController::class, 'reporte_reservas_tomorrow'])->middleware('auth','admin')->name('reservas_reporte');
 Route::get('/reservas_reporte_hoy', [App\Http\Controllers\ReservaController::class, 'reporte_reservas_today'])->middleware('auth','admin')->name('reservas_reporte_hoy');
