@@ -169,7 +169,13 @@
                   <form action="{{ route('admin_atendido_state', ['id' => $reserva->id]) }}" method="post" style="display:inline-block;">
                     @csrf
                     @method('POST')
-                   <button type="submit" class="btn btn-sm btn-success"><i class="fa-solid fa-user-check" style="color: rgb(255, 255, 255);"></i></button>
+                   <button type="submit" class="btn btn-sm btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Atendido"><i class="fa-solid fa-user-check" style="color: rgb(255, 255, 255);"></i></button>
+
+                </form> 
+                 <form action="{{ route('admin_noshow_state', ['id' => $reserva->id]) }}" method="post" style="display:inline-block;">
+                    @csrf
+                    @method('POST')
+                   <button type="submit" class="btn btn-sm btn-dark" data-bs-toggle="tooltip" data-bs-placement="top" title="No Show" ><i class="fa-solid fa-users-slash" style="color: rgb(255, 255, 255);"></i></button>
 
                 </form> 
                  <form action="{{ route('admin_edit_reserva', ['id' => $reserva->id]) }}" method="get" style="display:inline-block;">     
@@ -339,6 +345,7 @@
                 @if ($reserva_state->state === 'Atendido')
                 <td ><a class="badge bg-primary p-2">{{$reserva_state->state}}</a></td>
                 @endif 
+                
 
                 <td>{{$reserva_state->observation}}</td>
                  {{-- <td >  
@@ -718,6 +725,11 @@ function procesarFormulario(event) {
     boton.disabled = true;
     boton.innerText = "Procesando...";
   }
+
+   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 </script>
 
 
