@@ -111,6 +111,27 @@
             border-color: #f59e0b !important;
             transform: scale(1.05);
         }
+
+         #map-table-8 {
+            rotate: 90deg;
+           
+            flex-direction: row !important;
+            
+            writing-mode: vertical !important; 
+            text-orientation: upright !important;
+
+            width: 160px !important;
+            height: 95px !important;           
+            
+        }
+        #map-table-8 div {
+            
+          rotate: -90deg;
+            
+        }
+
+      
+    
        
        @media(max-width: 1625px) {
         body {
@@ -147,7 +168,7 @@
                             </h4>
         </div>
         
-        <div class="m-1" id="container-reservas">
+        <div class="m-1 overflow-auto" id="container-reservas">
             
         </div>
 
