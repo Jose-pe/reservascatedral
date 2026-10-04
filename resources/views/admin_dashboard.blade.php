@@ -23,19 +23,19 @@
     "wdth" 100;
 }
     body { 
-      background-color: #353535 !important; 
-      color: white !important;
+      background-color: #d6d6d6 !important; 
+      color: rgb(31, 8, 8) !important;
 
       max-width: 100% !important;
 
-      font-family: 'Datatype', monospace !important;
+      
       
       letter-spacing: 0.03rem !important; 
     
     }
-    .sidebar { height: 20vh; background: #1b1b1d; color: white; }
+    .sidebar { height: 20vh; background: #361a0d; color: white; }
     .sidebar a { color: #ccc; text-decoration: none; display: inline-block; padding: 12px 20px; cursor:pointer; }
-    .sidebar a:hover, .sidebar a.active { background: #2d2e33; color: #f0f0f0; }
+    .sidebar a:hover, .sidebar a.active { background: #753a18; color: #f0f0f0; }
     .card { border-radius: 15px; }
     .section { display:none; }
     .section.active { display:block; }
@@ -44,8 +44,8 @@
     }
       th{
       text-align: center !important;
-      color: rgb(19, 150, 19) !important;
-      font-size: 1.2rem !important;
+      color: rgb(73, 35, 28) !important;
+      font-size: 1rem !important;
       font-weight: bolder !important; 
     }
 
@@ -57,17 +57,17 @@
         font-size: 2.4rem;!important;
     }
     .card{
-      background-color: #1b1b1d !important;
+      background-color: #e9e9e9 !important;
       color: white !important;
     }
 
     .card-header{
-      background-color: #525252 !important;
-      color: white !important;
+      background-color: #e6e6e6 !important;
+      color: rgb(64, 46, 11) !important;
 
     }
     .text-muted{
-        color: #ccc !important;
+        color: #2b2929 !important;
     }
   </style>
 </head>
@@ -78,7 +78,7 @@
     <div class="row">
     <!-- Sidebar -->
     <div class="col-12 p-0 sidebar">
-      <h4 class="text-center py-4">🍽 Admin</h4>
+      <h4 class="text-center py-4">🍽 CATEDRAL 🍽  </h4>
       <a class="active" onclick="showSection('dashboard', this)"><i class="fa-solid fa-gauge-high fa-lg" style="color: rgb(255, 255, 255);"></i> Dashboard</a>
       <a onclick="showSection('reservas_pendientes', this)"><i class="fa-solid fa-thumbtack fa-lg" style="color: rgb(255, 255, 255);"></i> Reservas pendientes</a>
       <a onclick="showSection('reservas_hoy', this)"><i class="fa-solid fa-calendar-day fa-lg" style="color: rgb(255, 255, 255);"></i> Reservas creadas hoy</a>
@@ -155,7 +155,7 @@
         </div>
         </div>
         <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-dark ">
+          <table class="table table-hover table-striped ">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -252,7 +252,7 @@
       
         </div>
         <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-dark">
+          <table class="table table-hover table-striped">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -335,7 +335,7 @@
         <div class="card">
           <div class="card-body table-responsive">
               <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-dark">
+          <table class="table table-hover table-striped">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -423,7 +423,7 @@
         <div class="card">
           <div class="card-body table-responsive">
               <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-dark">
+          <table class="table table-hover table-striped">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -520,14 +520,15 @@
 
 
        <div id="reservas_hoy" class="section">
-        <h2 class="mb-4">Reservas creadas Hoy</h2>
+       
         <div class="row">
-           <div class="card shadow pt-5">
+           <h2 class="mb-4">Reservas creadas Hoy</h2>
+           <div class="card shadow pt-1">
         <div class="card-header d-flex justify-content-between align-items-center">
           
         </div>
         <div class="card-body table-responsive">
-          <table class="table table-hover table-striped table-dark">
+          <table class="table table-hover table-striped">
             <thead>
               <tr>
                 <th>Cliente</th>
@@ -633,7 +634,7 @@
 <!-- MODAL -->
 <div class="modal fade" id="reservaModal">
   <div class="modal-dialog">
-    <div class="modal-content bg-dark text-white">
+    <div class="modal-content bg-ligth text-dark">
       <div class="modal-header">
         <h5 class="modal-title">Crear Reserva</h5>
         <button class="btn-close" data-bs-dismiss="modal"></button>

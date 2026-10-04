@@ -20,19 +20,19 @@
     "wdth" 100;
 }
     body { 
-      background-color: #353535 !important; 
-      color: white !important;
+      background-color: #d6d6d6 !important; 
+      color: rgb(31, 8, 8) !important;
 
       max-width: 100% !important;
 
-      font-family: 'Datatype', monospace !important;
+      
       
       letter-spacing: 0.03rem !important; 
     
     }
-    .sidebar { height: 20vh; background: #1b1b1d; color: white; }
+    .sidebar { height: 20vh; background: #361a0d; color: white; }
     .sidebar a { color: #ccc; text-decoration: none; display: inline-block; padding: 12px 20px; cursor:pointer; }
-    .sidebar a:hover, .sidebar a.active { background: #2d2e33; color: #f0f0f0; }
+    .sidebar a:hover, .sidebar a.active { background: #753a18; color: #f0f0f0; }
     .card { border-radius: 15px; }
     .section { display:none; }
     .section.active { display:block; }
@@ -41,30 +41,27 @@
     }
       th{
       text-align: center !important;
-      color: rgb(19, 150, 19) !important;
-      font-size: 1.2rem !important;
+      color: rgb(73, 35, 28) !important;
+      font-size: 1rem !important;
       font-weight: bolder !important; 
     }
 
     h5{
         font-size: 2.4rem;!important;
     }
-
-    h5{
-        font-size: 2.4rem;!important;
-    }
+   
     .card{
-      background-color: #1b1b1d !important;
-      color: white !important;
+      background-color: #ffffff !important;
+      color: rgb(0, 0, 0) !important;
     }
 
     .card-header{
-      background-color: #525252 !important;
-      color: white !important;
+      background-color: #ffffff !important;
+      color: rgb(64, 46, 11) !important;
 
     }
     .text-muted{
-        color: #ccc !important;
+        color: #2b2929 !important;
     }
   </style>
 </head>
@@ -75,7 +72,7 @@
     <div class="row">
     <!-- Sidebar -->
     <div class="col-12 p-0 sidebar">
-      <h4 class="text-center py-4">🍽 Admin</h4>
+      <h4 class="text-center py-4">🍽 CATEDRAL 🍽  </h4>
       <a href="{{ route('admin_dashboard') }}"><i class="fa-solid fa-gauge-high fa-lg" style="color: rgb(255, 255, 255);"></i> Dashboard</a>
       <a class="active" href="#"><i class="fa-brands fa-leanpub fa-lg" style="color: rgb(255, 255, 255);"></i> Quejas y Reclamos </a>
     <a  href="{{route('admin_estadisticas_reservas')}}"><i class="fa-solid fa-chart-simple fa-lg" style="color: rgb(255, 255, 255);"></i> Estadisticas </a>
@@ -118,7 +115,7 @@
         <div class="card border-0 shadow-sm border-start border-primary border-4">
             <div class="card-body">
                 <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Registrados</div>
-                <div class="h3 mb-0 fw-bold text-ligth">{{ $totalReclamos }}</div>
+                <div class="h3 mb-0 fw-bold text-dark">{{ $totalReclamos }}</div>
             </div>
         </div>
     </div>
@@ -126,7 +123,7 @@
         <div class="card border-0 shadow-sm border-start border-warning border-4">
             <div class="card-body">
                 <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Pendientes (Plazo 15 días)</div>
-                <div class="h3 mb-0 fw-bold text-ligth">{{ $totalPendientes }}</div>
+                <div class="h3 mb-0 fw-bold text-dark">{{ $totalPendientes }}</div>
             </div>
         </div>
     </div>
@@ -134,7 +131,7 @@
         <div class="card border-0 shadow-sm border-start border-success border-4">
             <div class="card-body">
                 <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Atendidos</div>
-                <div class="h3 mb-0 fw-bold text-ligth">{{ $totalAtendidos }}</div>
+                <div class="h3 mb-0 fw-bold text-dark">{{ $totalAtendidos }}</div>
             </div>
         </div>
     </div>
@@ -172,8 +169,8 @@
 <div class="card border-0 shadow-sm">
     <div class="card-body p-0">
         <div class="table-responsive">
-            <table class="table table-hover table-striped table-dark align-middle mb-0">
-                <thead class="table-dark">
+            <table class="table table-hover table-striped table-light align-middle mb-0">
+                <thead class="table-light">
                     <tr>
                         <th>Correlativo</th>
                         <th>Fecha</th>
