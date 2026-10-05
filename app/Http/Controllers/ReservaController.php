@@ -409,7 +409,7 @@ class ReservaController extends Controller
          return view('super_admin_table_reservas', compact('reservas'));
     }
 
-         public function super_admin_filtrar_fecha(Request $request){ 
+    public function super_admin_filtrar_fecha(Request $request){ 
         if (Auth::user()->role !== 'admin') {
                 return view('welcome');
             }
@@ -448,7 +448,7 @@ class ReservaController extends Controller
         */
     }
 
-    $reservas = $query->orderBy('reservation_date', 'desc')->get();   // Ejecutamos la consulta
+    $reservas = $query->orderBy('reservation_date', 'asc')->orderBy('reservation_time', 'asc')->get();   // Ejecutamos la consulta
     
 
     return view('super_admin_table_reservas', compact('reservas'));
